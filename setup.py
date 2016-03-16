@@ -18,6 +18,7 @@ setup(name='family',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
+          'click',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
