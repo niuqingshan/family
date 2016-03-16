@@ -1,2 +1,2 @@
-# we are family, we are microservices
+# We are family, we are microservices
 microservice framework
