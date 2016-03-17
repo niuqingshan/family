@@ -1,11 +1,11 @@
 
 
 
-from paste.script.templates import Template
+from paste.script.templates import Template, var
 from paste.util.template import paste_script_template_renderer
 
 
-class FalconPackage(Template):
+class FalconTemplate(Template):
 
     _template_dir = 'falcon'
     summary = "A basic daixm microserivce falcon package"

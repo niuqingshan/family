@@ -24,5 +24,7 @@ setup(name='family',
       entry_points="""
       [console_scripts]
       family-createapp=family.commands.createapp:create
+      [paste.paster_create_template]
+      falcon = family.templates.basic:FalconTemplate
       """,
       )
