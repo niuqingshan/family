@@ -1,2 +1,9 @@
 # We are family, we are microservices
-microservice framework
+
+## Get Started
+
+    mkvirtualenv family
+
+    family-createapp $PROJECT_NAME
+
+    # then step by step create your project
