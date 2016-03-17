@@ -14,4 +14,4 @@ pidfile = /tmp/gunicorn-8000.pid
 
 
 [app:main]
-use = egg:{{ package_name }}
+use = egg:{{ package }}

@@ -7,7 +7,7 @@ from paste.util.template import paste_script_template_renderer
 
 class FalconPackage(Template):
 
-    _template_dir = ''
+    _template_dir = 'falcon'
     summary = "A basic daixm microserivce falcon package"
     vars = [
         var('version', 'Version (like 0.1)'),

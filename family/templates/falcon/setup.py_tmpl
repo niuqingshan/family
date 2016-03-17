@@ -22,6 +22,6 @@ setup(name={{repr(project)}},
       entry_points="""
       # -*- Entry points: -*-
       [paste.app_factory]
-      main = {{ package_name }}.wsgi:make_app
+      main = {{package}}.wsgi:make_app
       """,
       )
