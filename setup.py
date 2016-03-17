@@ -20,6 +20,7 @@ setup(name='family',
       install_requires=[
           'click',
           'PasteScript',
+          'check-manifest',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
