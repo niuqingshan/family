@@ -1,6 +1,7 @@
 
 
 
+import os
 from paste.script.templates import Template, var
 from paste.util.template import paste_script_template_renderer
 
@@ -21,4 +22,5 @@ class FalconTemplate(Template):
 
     template_renderer = staticmethod(paste_script_template_renderer)
 
-
+    def post(self, command, output_dir, vars):
+        os.rename('%s/gitignore' % output_dir, '%s/.gitignore' % output_dir)
