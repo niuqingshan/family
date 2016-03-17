@@ -19,6 +19,7 @@ setup(name='family',
       zip_safe=False,
       install_requires=[
           'click',
+          'PasteScript',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
