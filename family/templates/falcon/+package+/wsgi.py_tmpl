@@ -5,7 +5,6 @@ from paste.deploy.config import ConfigMiddleware
 
 
 def make_app(global_config, **settings):
-    conf = global_conf.copy()
+    conf = global_config.copy()
     conf.update(settings)
-    app = ConfigMiddleware(app, conf)
-    return app
+    return ConfigMiddleware(app, conf)
