@@ -22,6 +22,7 @@ setup(name='family',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
-      # -*- Entry points: -*-
+      [console_scripts]
+      family-createapp=family.commands.createapp:create
       """,
       )
