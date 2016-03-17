@@ -27,3 +27,5 @@
       ├── production.ini
       ├── requirements.txt
       └── setup.py
+
+    pip install -r requirements.txt; gunicorn --paste development.ini
