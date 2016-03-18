@@ -9,11 +9,11 @@ setup(name='family',
       long_description="""\
 """,
       classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
-      keywords='microservice,falcon',
+      keywords='microservice falcon',
       author='torpedoallen',
       author_email='torpedoallen@gmail.com',
       url='https://github.com/daixm/family',
-      license='',
+      license='MIT',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
       zip_safe=False,
@@ -21,7 +21,6 @@ setup(name='family',
           'click',
           'PasteScript',
           'check-manifest',
-          # -*- Extra requirements: -*-
       ],
       entry_points="""
       [console_scripts]
