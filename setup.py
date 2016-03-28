@@ -1,14 +1,13 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '0.1'
+version = '0.2'
 
 setup(name='family',
       version=version,
       description="Easy to create your microservice based on Falcon.",
       long_description="""\
 """,
-      classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='microservice falcon',
       author='torpedoallen',
       author_email='torpedoallen@gmail.com',
