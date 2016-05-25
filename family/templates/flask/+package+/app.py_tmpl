@@ -1,13 +1,14 @@
 # coding=utf8
 
 
-import falcon
+from flask import Flask
 
-import requests
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+app = Flask(__name__)
 
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
 
-app = falcon.API()
-
+if __name__ == '__main__':
+    app.run()
 
