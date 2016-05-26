@@ -2,11 +2,9 @@
 
 ## Get Started
 
-    mkvirtualenv family
+    pip install family
 
-    pip install git+git://github.com/daixm/family.git@master
-
-    family-createapp helloworld
+    family-createapp helloworld -f falcon # alternative flask
 
     # then step by step create your project
 
