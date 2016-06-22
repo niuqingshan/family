@@ -20,10 +20,14 @@ setup(name='family',
           'click',
           'PasteScript',
           'check-manifest',
+          'aliyuncli',
+          'aliyun-python-sdk-slb',
       ],
       entry_points="""
       [console_scripts]
       family-createapp=family.commands.createapp:create
+      family-aliyun-init=family.commands.aliyun:init_listener
+      family-aliyun-deploy=family.commands.aliyun:deploy
       [paste.paster_create_template]
       falcon = family.templates.basic:FalconTemplate
       flask = family.templates.basic:FlaskTemplate
