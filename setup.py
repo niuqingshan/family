@@ -23,6 +23,7 @@ setup(name='family',
           'aliyuncli',
           'aliyun-python-sdk-slb',
           'django',
+          'wheel',
       ],
       entry_points="""
       [console_scripts]
