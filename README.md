@@ -27,3 +27,10 @@
       └── setup.py
 
     pip install -r requirements.txt; gunicorn --paste development.ini
+
+
+## TODO
+
+    * Integrate with SLB to make the service discover and register available.
+    * unify configurations
+    * common logger
