@@ -22,6 +22,7 @@ setup(name='family',
           'check-manifest',
           'aliyuncli',
           'aliyun-python-sdk-slb',
+          'django',
       ],
       entry_points="""
       [console_scripts]
