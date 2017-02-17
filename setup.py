@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '0.2.2'
+version = '0.2.3'
 
 setup(name='family',
       version=version,
@@ -22,6 +22,8 @@ setup(name='family',
           'check-manifest',
           'aliyuncli',
           'aliyun-python-sdk-slb',
+          'django',
+          'wheel',
       ],
       entry_points="""
       [console_scripts]
