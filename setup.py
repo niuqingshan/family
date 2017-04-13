@@ -22,7 +22,6 @@ setup(name='family',
           'check-manifest',
           'aliyuncli',
           'aliyun-python-sdk-slb',
-          'django',
           'wheel',
       ],
       entry_points="""

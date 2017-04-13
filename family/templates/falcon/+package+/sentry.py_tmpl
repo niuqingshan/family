@@ -15,16 +15,6 @@ if settings.SENTRY_PATH:
 else:
     client = None
 
-current_dir = os.path.dirname(os.path.realpath(__file__)).split('/')[-1]
-logger = logging.getLogger('%s.%s' % (current_dir, __name__))
-logger.setLevel(logging.DEBUG)
-
-handler = logging.FileHandler(settings.DEBUG_LOG_DIR)
-handler.setLevel(logging.DEBUG)
-formatter = logging.Formatter('%(levelname)s\t%(asctime)s\t%(module)s %(process)d %(thread)d %(message)s')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
-
 def sentry_exception_handler(ex, req, resp, params):
     resp.status = falcon.HTTP_400
     resp.body = falcon.HTTPError(
