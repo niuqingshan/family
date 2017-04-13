@@ -4,8 +4,9 @@ requests
 simplejson
 PasteScript
 gunicorn
-ipython
+ipython==4.0.0
 SQLAlchemy
 alembic
 gevent
 raven
+fabric
