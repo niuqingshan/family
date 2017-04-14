@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '0.2.4'
+version = '0.2.5'
 
 setup(name='family',
       version=version,
@@ -20,15 +20,11 @@ setup(name='family',
           'click',
           'PasteScript',
           'check-manifest',
-          'aliyuncli',
-          'aliyun-python-sdk-slb',
           'wheel',
       ],
       entry_points="""
       [console_scripts]
       family-createapp=family.commands.createapp:create
-      family-aliyun-init=family.commands.aliyun:init_listener
-      family-aliyun-deploy=family.commands.aliyun:deploy
       [paste.paster_create_template]
       falcon = family.templates.basic:FalconTemplate
       flask = family.templates.basic:FlaskTemplate
