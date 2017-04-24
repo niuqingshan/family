@@ -17,6 +17,7 @@ setup(name={{repr(project)}},
       include_package_data=True,
       install_requires=[
           # -*- Extra requirements: -*-
+          'fabric',
       ],
       entry_points="""
       # -*- Entry points: -*-
