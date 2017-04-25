@@ -2,13 +2,22 @@
 
 ## Get Started
 
+### Why family ?
+
+    * Integrate alternative web frameworks, fabric, supervisor, gunicorn and server configuration files.
+    * Almost include all of 12 factors.
+
+### Latest Version
+
+    0.2.6
+
 ### Installation
 
     pip install family
 
 ### Create your app
 
-    family-createapp helloworld -f falcon # alternative flask
+    family-createapp -f falcon helloworld
 
     # then step by step create your project
 
@@ -38,6 +47,10 @@
             └── top_level.txt
 
     pip install -r requirements.txt
+
+### Alternative framework
+
+    family-createapp -f flask helloworld
 
 ### Local development
 
