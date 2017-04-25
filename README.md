@@ -64,6 +64,5 @@
 
 ## TODO
 
-    * Integrate with SLB to make the service discover and register available.
-    * unify configurations
-    * common logger
+    * service discover
+    * trace logger
