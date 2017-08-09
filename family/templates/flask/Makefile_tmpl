@@ -5,9 +5,9 @@ clean_swp:
 	find `pwd` -name '*.swp' -type f -delete
 
 init:
-	pip install -r requirements.txt
-	alembic init alembic
-	cp configs/alembic_env.py_tmpl alembic/env.py
+	virtualenv .venv
+	bash -c 'source .venv/bin/activate;pip install -r requirements.txt;pip install -e .;alembic init alembic'
+	cp configs/alembic_env.py alembic/env.py
 	rm alembic.ini
 
 syncdb-local:
@@ -16,6 +16,8 @@ syncdb-local:
 	alembic -c configs/alembic-dev.ini upgrade head
 
 syncdb-product:
-	alembic -c configs/alebic.ini upgrade head
+	alembic -c configs/alembic.ini upgrade head
 
+start:
+	gunicorn -c configs/gunicorn_development.py {{package}}.wsgi:app
 
