@@ -4,12 +4,18 @@ clean_pyc:
 clean_swp:
 	find `pwd` -name '*.swp' -type f -delete
 
+init:
+	pip install -r requirements.txt
+	alembic init alembic
+	cp configs/alembic_env.py_tmpl alembic/env.py
+	rm alembic.ini
+
 syncdb-local:
-	alembic -c alembic-dev.ini upgrade head
-	alembic -c alembic-dev.ini revision --autogenerate -m "make migration"
-	alembic -c alembic-dev.ini upgrade head
+	alembic -c configs/alembic-dev.ini upgrade head
+	alembic -c configs/alembic-dev.ini revision --autogenerate -m "make migration"
+	alembic -c configs/alembic-dev.ini upgrade head
 
 syncdb-product:
-	alembic upgrade head
+	alembic -c configs/alebic.ini upgrade head
 
 
