@@ -28,5 +28,6 @@ setup(name='family',
       [paste.paster_create_template]
       falcon = family.templates.basic:FalconTemplate
       flask = family.templates.basic:FlaskTemplate
+      common_wsgi = family.templates.basic:CommonWsgiTemplate
       """,
       )
