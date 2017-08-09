@@ -1,0 +1,15 @@
+clean_pyc:
+	find `pwd` -name '*.pyc' -type f -delete
+
+clean_swp:
+	find `pwd` -name '*.swp' -type f -delete
+
+syncdb-local:
+	alembic -c alembic-dev.ini upgrade head
+	alembic -c alembic-dev.ini revision --autogenerate -m "make migration"
+	alembic -c alembic-dev.ini upgrade head
+
+syncdb-product:
+	alembic upgrade head
+
+
