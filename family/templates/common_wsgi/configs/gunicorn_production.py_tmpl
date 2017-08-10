@@ -11,7 +11,7 @@ timeout = 600
 bind = '0.0.0.0:3130'
 pidfile = '/data/logs/{{package}}/gunicorn.pid'
 accesslog = '/data/logs/{{package}}/access.log'
-errorlog = '/data/logs/{{package}}/access.log'
+errorlog = '/data/logs/{{package}}/error.log'
 
 
 def on_starting(server):
