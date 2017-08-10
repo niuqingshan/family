@@ -7,7 +7,7 @@ clean_swp:
 init:
 	virtualenv .venv
 	bash -c 'source .venv/bin/activate;pip install -r requirements.txt;pip install -e .;alembic init alembic'
-	cp configs/alembic_env.py alembic/env.py
+	cp configs/alembic_env.py_tmpl alembic/env.py
 	rm alembic.ini
 
 syncdb-local:

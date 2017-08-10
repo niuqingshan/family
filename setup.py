@@ -1,7 +1,13 @@
 from setuptools import setup, find_packages
-import sys, os
+import re, sys, os
 
-version = '0.2.6'
+version = None
+with open('family/__init__.py', 'r') as f:
+    for line in f:
+        m = re.match(r'^__version__\s*=\s*(["\'])([^"\']+)\1', line)
+        if m:
+            version = m.group(2)
+            break
 
 setup(name='family',
       version=version,
@@ -11,7 +17,7 @@ setup(name='family',
       keywords='microservice falcon flask',
       author='torpedoallen',
       author_email='torpedoallen@gmail.com',
-      url='https://github.com/daixm/family',
+      url='https://github.com/torpedoallen/family',
       license='MIT',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
