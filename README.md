@@ -1,5 +1,7 @@
 # We are family, we are microservices
 
+[![Build Status](https://travis-ci.org/torpedoallen/family.svg?branch=master)](https://travis-ci.org/torpedoallen/family)
+
 ## Get Started
 
 ### Why family ?
