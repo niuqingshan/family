@@ -1,5 +1,5 @@
 [uwsgi]
-chdir       = your path here
+chdir       = %d..
 module      = {{package}}.wsgi
 # the virtualenv (full path)
 home        = %(chdir)/.venv
