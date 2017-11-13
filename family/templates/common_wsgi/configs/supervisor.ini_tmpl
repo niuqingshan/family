@@ -3,3 +3,7 @@ command=/data/home/work/{{package}}/.venv/bin/gunicorn -c configs/gunicorn_produ
 directory=/data/home/work/{{package}}
 user=work
 autostart=true
+autorestart=true
+stopasgroup=true
+stopsignal=SIGTERM
+stopwaitsecs=120
